@@ -11,40 +11,42 @@
   </head>
   <body>
     <section>
-      <h1>Create your personal profile</h1>
-      <fieldset>
-        We want to get to know you. Please enter your personal information.
+      <form>
+        <h1>Create your personal profile</h1>
         <fieldset>
-          <legend>Personal information</legend>
-          <label for="firstname">First name:</label>
-          <input name="firstname" id="firstname" type="text" />
-          <label for="lastname">Last name:</label>
-          <input name="lastname" id="lastname" type="text" />
-          <label for="birthday">Your birthday:</label>
-          <input name="birthday" id="birthday" type="date" />
+          We want to get to know you. Please enter your personal information.
+          <fieldset>
+            <legend>Personal information</legend>
+            <label for="firstname">First name:</label>
+            <input name="firstname" id="firstname" type="text" />
+            <label for="lastname">Last name:</label>
+            <input name="lastname" id="lastname" type="text" />
+            <label for="birthday">Your birthday:</label>
+            <input name="birthday" id="birthday" type="date" />
+          </fieldset>
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+          <fieldset>
+            <legend>Further information</legend>
+            <label for="favoritecolor">Favorite Color:</label>
+            <input
+              name="favoritecolor"
+              id="favoritecolor"
+              type="color"
+              value="#e5430f"
+            />
+            <label for="favoritepet">What's your favorite pet?</label>
+            <select name="favoritepet" id="favoritepet" placeholder="Please">
+              <option value="" disabled selected hidden>
+                --Please choose an option--
+              </option>
+              <option value="cats">Cats</option>
+              <option value="dogs">Dogs</option>
+            </select>
+          </fieldset>
+          <button type="submit">Submit</button>
         </fieldset>
-        Can you tell us a little bit more? We want to annoy you with unwanted
-        ads.
-        <fieldset>
-          <legend>Further information</legend>
-          <label for="favoritecolor">Favorite Color:</label>
-          <input
-            name="favoritecolor"
-            id="favoritecolor"
-            type="color"
-            value="#e5430f"
-          />
-          <label for="favoritepet">What's your favorite pet?</label>
-          <select name="favoritepet" id="favoritepet" placeholder="Please">
-            <option value="" disabled selected hidden>
-              --Please choose an option--
-            </option>
-            <option value="cats">Cats</option>
-            <option value="dogs">Dogs</option>
-          </select>
-        </fieldset>
-        <button type="submit">Submit</button>
-      </fieldset>
+      </form>
     </section>
   </body>
 </html>
